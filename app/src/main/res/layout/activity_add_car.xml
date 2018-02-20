@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ro.ubb.carapp.AddCarActivity">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/addName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:text="Name"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/addQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:text="Quantity"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/addType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:ems="10"
+                android:hint="Type"
+                android:inputType="text"
+                android:text="Type"
+                android:textColorHint="#fff" />
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:background="#000"
+                android:onClick="addClick"
+                android:text="Add a new car"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBarAdd"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="321dp"
+                android:layout_height="73dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
